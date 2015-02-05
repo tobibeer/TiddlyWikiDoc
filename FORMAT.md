@@ -10,7 +10,8 @@ Documentation blocks are comment blocks that start with two asterisks, e.g.
 
 ```
 /**
-_field: value
+_argument: value
+__docfield: value
 tags: foo bar
 
 text
@@ -23,8 +24,10 @@ text
     * e.g. starting out with field declarations
     * then a newline
     * followed by the documentation content
-* all documentation specific fields are  prefixed with **_underscore**
+* all documentation specific fields are prefixed with **_underscore**
+    * especially `_return` and `_arguments`
     * so as to avoid clashes with standard tiddler fields
+    * specific documentation fields are given two `__underscores` so as to avoid clashes with arguments
 * all regular fields are specified as-is, e.g. tags
 * for each documented module or function a `//single comment line` shall remain immediately above it
     * to summarize the module or function, saved in a `_summary` field
@@ -42,24 +45,24 @@ type: application/javascript
 module-type: filteroperator
 \*/
 /**
-_namespace: $tw.Wiki.prototype.filterOperators.listed
+___namespace: $tw.Wiki.prototype.filterOperators.listed
 */
 //Filter operator returning all tiddlers that have the selected tiddlers in a list
 (function(){
 ```
 
 * documents the module as a whole in the sense of an introduction
-* each module block defines a namespace refering to the object to which its functions by default apply
+* for each module a `__namespace` is defined refering to the actual object to which its functions by default apply
     * in the case of a filter it's pretty much the function itself rather than a module, see [examples](EXAMPLES.md)
 
 ### Function Documentation
 
 ```
 /**
-_return: {string} the text contained in the TextReference
-_textRef: {string} a TextReference
-_defaultText: {string} the default text returned when undefined
-_currTiddlerTitle: {string} the CurrentTiddler, e.g. for `{{!!field}}`
+_return: {String} the text contained in the TextReference
+_textRef: {String} a TextReference
+_defaultText: {String} the default text returned when undefined
+_currTiddlerTitle: {String} the CurrentTiddler, e.g. for `{{!!field}}`
 tags: TextReferences
 
 Text references can have any of these forms:
