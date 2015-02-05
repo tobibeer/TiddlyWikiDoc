@@ -9,5 +9,5 @@ a draft for documenting the js core of TiddlyWiki
     * from code-comments to API documentation
 * [Format](FORMAT.md)
     * the commenting format
-* [Examples](EXAMPLES.md)
+* [Examples](examples)
     * examples cases for components
