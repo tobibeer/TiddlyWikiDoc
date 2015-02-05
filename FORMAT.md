@@ -56,7 +56,7 @@ _namespace: $tw.Wiki.prototype.filterOperators.listed
 
 ```
 /**
-_return: {string} the text for the text reference
+_return: {string} the text contained in the text reference
 _textRef: {string} a TextReference
 _defaultText: {string} the default text returned when undefined
 _currTiddlerTitle: {string} the current tiddler's title, e.g. for `{{!!field}}`
