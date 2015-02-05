@@ -1,6 +1,8 @@
 ### 1. Eat Your Own Dogfood
 
 * the TiddlyWiki API documentation is a TiddlyWiki and built by one
+* most of the API documentation logic is build within that TiddlyWiki
+  * rather than implemented in a comment parser
 * no 3rd party rendering libraries / external dependencies
 
 ### 2. KISS
