@@ -95,7 +95,7 @@ exports.getTextReference = function(textRef,defaultText,currTiddlerTitle) {
    * should follow **_return** for readability
 * **title** — is calculated for each **documentation tiddler** as a concatenation of...
     * the `__namespace` defined for the module
-        * can be overwritten by declaring a `_namespace` at the function documentation
+        * can be overwritten by declaring a `__namespace` at the function documentation
     * `.` — a dot
     * the name of the function as extracted by the parser
 * **__arguments** — the actual arguments are parsed from the function head, removing commas
