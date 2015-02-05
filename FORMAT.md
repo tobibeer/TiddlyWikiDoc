@@ -56,10 +56,10 @@ _namespace: $tw.Wiki.prototype.filterOperators.listed
 
 ```
 /**
-_return: {string} the text contained in the text reference
+_return: {string} the text contained in the TextReference
 _textRef: {string} a TextReference
 _defaultText: {string} the default text returned when undefined
-_currTiddlerTitle: {string} the current tiddler's title, e.g. for `{{!!field}}`
+_currTiddlerTitle: {string} the CurrentTiddler, e.g. for `{{!!field}}`
 tags: TextReferences
 
 Text references can have any of these forms:
