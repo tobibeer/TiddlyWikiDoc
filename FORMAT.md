@@ -66,7 +66,7 @@ __namespace: $tw.Wiki.prototype.filterOperators.listed
 
 * documents the module as a whole in the sense of an introduction
 * for each module a `__namespace` is defined refering to the actual object to which its functions by default apply
-    * in the case of a filter it's pretty much the function itself rather than a module, see [examples](EXAMPLES.md)
+    * in the case of a filter it's pretty much the function itself rather than a module, see [examples](examples)
 
 ### Function Documentation
 
