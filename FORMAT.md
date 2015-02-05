@@ -81,9 +81,9 @@ tags: TextReferences
 Text references can have any of these forms:
 
 * `<tiddlertitle>`
-* <tiddlertitle>!!<fieldname>`
-* !!<fieldname> — a field of the CurrentTiddler`
-* <tiddlertitle>##<index>` — for DataTiddlers
+* `<tiddlertitle>!!<fieldname>`
+* `!!<fieldname>` — a field of the CurrentTiddler
+* `<tiddlertitle>##<index>` — for DataTiddlers
 */
 //get the value of a text reference
 exports.getTextReference = function(textRef,defaultText,currTiddlerTitle) {
