@@ -10,4 +10,4 @@ a draft for an API documentation of the TiddlyWiki JavaScript core
 * [Format](FORMAT.md)
     * the commenting format
 * [Examples](examples)
-    * examples cases for components
+    * examples for module documentation
