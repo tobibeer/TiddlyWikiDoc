@@ -16,6 +16,7 @@ From code-comments to the API documentation. Let's start at the end.
 A dedicated build process for the API documentation will..
 * parse all **.js** tiddlers of master
 * translate the documentation comment blocks in each module into **documentation tiddlers**
+   * also parsing function heads
 * output **documentation tiddlers** into a dedicated folder in the API edition
 * leave other folders in the API edition untouched
     * e.g. macros, styles, conditional templates, menus, etc.
