@@ -13,7 +13,7 @@ From code-comments to the API documentation. Let's start at the end.
 
 ### 2. build-doc
 
-A dedicated build process will..
+A dedicated build process for the API documentation will..
 * parse all **.js** tiddlers of master
 * translate the documentation comment blocks in each module into **documentation tiddlers**
 * output **documentation tiddlers** into a dedicated folder in the API edition
