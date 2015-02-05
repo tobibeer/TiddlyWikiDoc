@@ -1,6 +1,6 @@
-### 3. API edition
+From code-comments to the API documentation. Let's start at the end.
 
-Let's start at the end.
+### 3. API edition
 
 Eventually, there will be a Tiddlywiki **API** edition that contains appropriately titled **documentation tiddlers** that reference the code-elements they relate to. A conditional ViewTemplate will render, e.g. slide open, the corresponding shadow tiddler. The parser will extract all required information to know for each documentation tiddler precisely what object in the browser memory it relates to, so we can even render that function in-place. Later we may  also implement a side-by-side view of code and comments, since we know during parsing what line of code a given documentation comment block refers to.
 
