@@ -5,3 +5,16 @@
 The parameters for the filter function need not be explicitly documented at every single filter as they are common throughout all filters, documented in a dedicated block at **filters.js** itself.
 
 The reference to **filters.js** will be established by a module in the API wiki, e.g. a conditional ViewTemplate that knows we're looking at a `moduletype=filteroperator` and hence render a backlink to **filters.js**.
+
+```
+/*\
+title: $:/core/modules/filters/backlinks.js
+type: application/javascript
+module-type: filteroperator
+\*/
+/**
+__namespace: $tw.Wiki.prototype.filterOperators.listed
+*/
+//Filter operator for returning all the backlinks from a tiddler
+(function(){
+```
