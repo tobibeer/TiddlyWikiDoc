@@ -6,7 +6,7 @@
 
 ### Documentation Blocks
 
-Are comment blocks starting with two asterisks, e.g.
+Documentation blocks are comment blocks that start with two asterisks, e.g.
 
 ```
 /**
