@@ -1,17 +1,17 @@
 ### 1. Eat Your Own Dogfood
 
-* The TiddlyWiki API documentation is a TiddlyWiki and built by one
-* No 3rd party rendering libraries / external dependencies
+* the TiddlyWiki API documentation is a TiddlyWiki and built by one
+* no 3rd party rendering libraries / external dependencies
 
 ### 2. KISS
 
-* Keep It Simple Smart
-* Use **.tid** format for documentation blocks => TiddlyWiki style "WYSYWIG"
-* JSDOC parser to cater for other projects? => Later!
-* Output formats other than TiddlyWiki? => Later!
+* keep it simple and smart
+* use **.tid** format for documentation blocks => TiddlyWiki style "WYSYWIG"
+* jsdoc parser to cater for other projects? => later!
+* output formats other than TiddlyWiki? => later!
 
 ### 3. Contributing
 
-* Make it easy for people to contribute code documentation
-* Simple, straight forward guidelines
+* make it easy for people to contribute code documentation
+* simple, straight forward guidelines
 * GitHub pull requests
