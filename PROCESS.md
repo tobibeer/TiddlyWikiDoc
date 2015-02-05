@@ -21,7 +21,7 @@ A dedicated build process for the API documentation will..
    * leave other folders in the API edition untouched
       * e.g. macros, styles, conditional templates, menus, etc.
 
-### 1. code comments
+### 1. documentation code comments
 
 * to actually comment the javascript code, we use a simple **.tid** file based [format](FORMAT.md)
     * documenting files (aka modules), functions, properties
