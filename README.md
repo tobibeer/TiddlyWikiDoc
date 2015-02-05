@@ -1,5 +1,5 @@
 # TiddlyWikiDoc
-a draft for documenting the js core of TiddlyWiki
+a draft for an API documentation for the TiddlyWiki JavaScript core
 
 # Contents
 
