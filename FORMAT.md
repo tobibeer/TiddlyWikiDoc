@@ -80,7 +80,9 @@ exports.getTextReference = function(textRef,defaultText,currTiddlerTitle) {
         * can be overwritten by declaring a `_namespace` at the function documentation
     * `.` — a dot
     * the name of the function as extracted by the parser
-* the actual arguments are parsed from the function head, removing commas and stored in the `_arguments` field
+* the actual arguments are parsed from the function head
+   * removing commas
+   * stored in the `_arguments` field
 
 ### Optional Fields
 * a `_released` field could specify the release number when a function or module was first introduced
