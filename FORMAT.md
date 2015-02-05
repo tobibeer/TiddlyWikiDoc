@@ -103,6 +103,9 @@ exports.getTextReference = function(textRef,defaultText,currTiddlerTitle) {
 * **__function** — the function title by itself
 * **__namespace** — the applied namespace by itself
 * **__summary** — the comment line above the function head
+* **__module** — the module title
+* **__folder** — the folder in which the file resides
+* **__file** — the filepath of the module holding the code
 
 ### Nice To Have Fields
 * a `__released` — the release number when a function or module was first introduced
