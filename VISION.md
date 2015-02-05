@@ -1,6 +1,6 @@
 ### 1. Eat Your Own Dogfood
 
-* The TiddlyWiki API documentation is a TiddlyWiki and built by it
+* The TiddlyWiki API documentation is a TiddlyWiki and built by one
 * No 3rd party rendering libraries / external dependencies
 
 ### 2. KISS
