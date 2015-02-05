@@ -4,7 +4,7 @@ From code-comments to the API documentation. Let's start at the end.
 
 * eventually, there will be a Tiddlywiki **API** edition
     * containing appropriately titled **documentation tiddlers** referencing the code-elements they relate to
-* a conditional view-template will render, e.g. slide open, the corresponding shadow tiddler
+* a conditional view-template will render, e.g. slide open, the corresponding code or shadow tiddler
 * the **build-doc** parser extracts all required information
    * so that we know for each documentation tiddler precisely what object in the browser memory it relates to
    * allowing us to  render that function in-place
