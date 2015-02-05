@@ -17,7 +17,7 @@ A dedicated build process will..
 * parse all **.js** tiddlers of master
 * translate the documentation comment blocks in each module into **documentation tiddlers**
 * output **documentation tiddlers** into a dedicated folder in the API edition
-* leave some folders in the API edition untouched
+* leave other folders in the API edition untouched
     * e.g. macros, styles, conditional templates, menus, etc.
 
 ### 1. code comments
