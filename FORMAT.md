@@ -25,14 +25,27 @@ text
     * then a newline
     * followed by the documentation content
 * all documentation specific fields are prefixed with **_underscore**
-    * especially `_return` and `_arguments`
+    * especially `_return` and each individual `_argument`
     * so as to avoid clashes with standard tiddler fields
     * specific documentation fields are given two `__underscores` so as to avoid clashes with arguments
 * all regular fields are specified as-is, e.g. tags
 * for each documented module or function a `//single comment line` shall remain immediately above it
-    * to summarize the module or function, saved in a `_summary` field
+    * to summarize the module or function, saved in a `__summary` field
     * thus, each function at least has a summary giving an indication as to what it does
         * assuming simple comments will remain in the final TiddlyWiki build — to be discussed
+
+### Content
+
+The content type for each block should be globally configurable for the **build-doc** parser and default to `text/vnd.tiddlywiki`, alternatively `text/x-markdown`. This can be overriden for individual documentation blocks simply by setting the type field accordingly...
+
+```
+/**
+type: text/x-markdown
+
+# Documentation
+Using markdown...
+*/
+```
 
 ### Module Documentation
 
@@ -45,7 +58,7 @@ type: application/javascript
 module-type: filteroperator
 \*/
 /**
-___namespace: $tw.Wiki.prototype.filterOperators.listed
+__namespace: $tw.Wiki.prototype.filterOperators.listed
 */
 //Filter operator returning all tiddlers that have the selected tiddlers in a list
 (function(){
@@ -76,17 +89,21 @@ Text references can have any of these forms:
 exports.getTextReference = function(textRef,defaultText,currTiddlerTitle) {
 ```
 
-* the return value is declared using `_return` and preferably listed first
-* arguments are prefixed with `_` and should follow the `_return` value
-* the calculated **title** of the **documentation tiddler** is a concatenation of...
-    * the `_namespace` defined for the module
+* **_return** — the return value
+   * preferably listed first for readability
+* **_argument** — each argument is prefixed with `_`
+   * should follow **_return** for readability
+* **title** — is calculated for each **documentation tiddler** as a concatenation of...
+    * the `__namespace` defined for the module
         * can be overwritten by declaring a `_namespace` at the function documentation
     * `.` — a dot
     * the name of the function as extracted by the parser
-* the actual arguments are parsed from the function head
-   * removing commas
-   * stored in the `_arguments` field
+* **__arguments** — the actual arguments are parsed from the function head, removing commas
+   * perhaps stored with underscores to simplify handling in TiddlyWiki
+* **__function** — the function title by itself
+* **__namespace** — the applied namespace by itself
+* **__summary** — the comment line above the function head
 
-### Optional Fields
-* a `_released` field could specify the release number when a function or module was first introduced
-* a `_modified` field could list all release numbers when a function was touched
+### Nice To Have Fields
+* a `__released` — the release number when a function or module was first introduced
+* a `__modified` — all release numbers when the function was touched, listed descending
