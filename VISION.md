@@ -2,7 +2,7 @@
 
 * the TiddlyWiki API documentation is a TiddlyWiki and built by one
 	* API Documentation comment blocks do not end up in the TiddlyWiki build
-* most of the API documentation logic is build within that TiddlyWiki
+* most of the API documentation logic is build within the API TiddlyWiki
 	* rather than implemented in a comment parser
 * no 3rd party rendering libraries / external dependencies
 	* except for plugins in that TiddlyWiki, e.g. higlight.js or CodeMirror 
