@@ -7,7 +7,7 @@
 
 * Keep It Simple Smart
 * Use **.tid** format for documentation blocks=> TiddlyWiki style " WYSYWIG"
-* JSDOC parser for other projects? => Later!
+* JSDOC parser to cater for other projects? => Later!
 * Output formats other than TiddlyWiki? => Later!
 
 ### 3. Contributing
