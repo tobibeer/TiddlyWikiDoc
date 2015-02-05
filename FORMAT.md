@@ -109,5 +109,5 @@ exports.getTextReference = function(textRef,defaultText,currTiddlerTitle) {
 * **__line** — the line of code where the function is defined
 
 ### Nice To Have Fields
-* a `__released` — the release number when a function or module was first introduced
-* a `__modified` — all release numbers when the function was touched, listed descending
+* **__released** — the release number when a function or module was first introduced
+* **__modified** — all release numbers when the function was touched, listed descending
